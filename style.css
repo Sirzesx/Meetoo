@@ -1,5 +1,22 @@
+body{
+
+	background-image: url("img/coupleP.jpg");
+
+}
+
 .jumbotron { 
     background-color: #FFC0CB; /* Rose */
     color: #ffffff; //blanc
-    /*background-image: url("img/coeur.jpg");*/  /* Image non fonctionnel */
+    background-image: url("img/coeur.jpg");  /* Image non fonctionnel */
+}
+
+#age{
+
+	width: 300px;
+}
+
+.container {
+	padding-top: 60px;
+
+
 }

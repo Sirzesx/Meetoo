@@ -19,44 +19,76 @@
 
 <!-- Corps du Site -->
   <body>
-    <div class="jumbotron">
-      <h2>Moi aussi !</h2> 
-      <p>Trouver la personne qui vous convient le mieux !</p> 
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+      <a class="navbar-brand" href="#">Logo</a>
       
+      <!-- Links -->
+      <ul class="navbar-nav">
 
-      <!--Debut de la partie inscription-->
-      <!-- Partie inscription accueil 1 -->
-      <div class="row">
-        <div class="col-md-offset-2 col-md-3">
-          <div class="form-group">
-              <label for="sexe">Je suis </label>
-              <select class="form-control" id="sexe">
-                <option>Un Homme </option>
-                <option>Une Femme</option>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
 
-              </select> 
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+
+    </nav>
+
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Moi aussi !</h2> 
+        <p>Trouver la personne qui vous convient le mieux !</p> 
+        
+
+        <!--Debut de la partie inscription-->
+        <!-- Partie inscription accueil 1 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+                <label for="sexe">Je suis </label>
+                <select class="form-control" id="sexe">
+                  <option>Un Homme </option>
+                  <option>Une Femme</option>
+
+                </select> 
+            </div>
+          </div>
+
+          <div class="offset-md-1 col-md-3">
+            <div class="form-group">
+                <label for="sexesearch">Je cherche </label>
+                <select class="form-control" id="sexesearch">
+                  <option>Un Homme </option>
+                  <option>Une Femme</option>
+                </select> 
+            </div>
           </div>
         </div>
 
-        <div class="col-md-offset-2 col-md-3">
+         <!-- Partie inscription accueil 2 -->
+        
           <div class="form-group">
-              <label for="sexesearch">Je cherche </label>
-              <select class="form-control" id="sexesearch">
-                <option>Un Homme </option>
-                <option>Une Femme</option>
-              </select> 
+              <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age">
           </div>
-        </div>
-      </div>
+        
+        <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
 
-       <!-- Partie inscription accueil 2 -->
-      <div class="form-group">
-          <label for="age">Age:</label>
-            <input type="number" class="form-control" id="age">
-      </div>
-    
-      <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
 
+      </div>
+    </div>
+
+
+    <div class="container">
 
     </div>
 
