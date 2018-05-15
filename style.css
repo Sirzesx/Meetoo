@@ -5,7 +5,7 @@ body{
 }
 
 .jumbotron { 
-    background-color: #FFC0CB; /* Rose */
+    background-color:hsl(180,100%,25%,0.2); /* Rose */
     color: #ffffff; //blanc
     background-image: url("img/coeur.jpg");  /* Image non fonctionnel */
 }

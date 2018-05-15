@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Bootstrap template</title>
+    <title>Accueil</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,21 +22,17 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="index.php">Logo</a>
       
       <!-- Links -->
       <ul class="navbar-nav">
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
+        <a class="nav-link" href="connexion.php">Connexion</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
+        <a class="nav-link" href="inscription.php">S'inscrire</a>
       </li>
 
     </nav>
@@ -87,10 +83,6 @@
       </div>
     </div>
 
-
-    <div class="container">
-
-    </div>
 
 
 
