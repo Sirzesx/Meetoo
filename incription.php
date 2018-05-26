@@ -41,10 +41,9 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h2>Moi aussi !</h2> 
-        <p>Trouver la personne qui vous convient le mieux !</p> 
+        <h2> Enrengistrement </h2> 
         
-
+        
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
         <div class="row">
@@ -76,6 +75,29 @@
               <label for="age">Age:</label>
                 <input type="number" class="form-control" id="age">
           </div>
+		  
+		  
+			<div class="form-group">
+				<label for="pseudo">Pseudo</label>
+				<input type="email" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
+				
+			</div>
+			
+		<div class="row">
+          <div class="col-md-3">	
+			<div class="form-group">
+				<label for="password">Mot de Passe</label>
+				<input type="password" class="form-control" id="password" placeholder="Mot de Passe">
+			</div>
+		</div>
+
+          <div class="offset-md-1 col-md-3">
+			<div class="form-group">
+				<label for="passwordConfirmation">Confirmation Mot de Passe</label>
+				<input type="password" class="form-control" id="passwordConfirmation" placeholder="Veuillez resaisir le Mot de Passe">
+			</div>
+		   </div>
+        </div>
         
         <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
 

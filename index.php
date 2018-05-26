@@ -47,38 +47,40 @@
 
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-group">
-                <label for="sexe">Je suis </label>
-                <select class="form-control" id="sexe">
-                  <option>Un Homme </option>
-                  <option>Une Femme</option>
+		<form action ="inscription.php" method="POST">
+	
+			<div class="row">
+			  <div class="col-md-3">
+				<div class="form-group">
+					<label for="sexe">Je suis </label>
+					<select class="form-control" id="sexe">
+					  <option>Un Homme </option>
+					  <option>Une Femme</option>
 
-                </select> 
-            </div>
-          </div>
+					</select> 
+				</div>
+			  </div>
 
-          <div class="offset-md-1 col-md-3">
-            <div class="form-group">
-                <label for="sexesearch">Je cherche </label>
-                <select class="form-control" id="sexesearch">
-                  <option>Un Homme </option>
-                  <option>Une Femme</option>
-                </select> 
-            </div>
-          </div>
-        </div>
+			  <div class="offset-md-1 col-md-3">
+				<div class="form-group">
+					<label for="sexesearch">Je cherche </label>
+					<select class="form-control" id="sexesearch">
+					  <option>Un Homme </option>
+					  <option>Une Femme</option>
+					</select> 
+				</div>
+			  </div>
+			</div>
 
-         <!-- Partie inscription accueil 2 -->
-        
-          <div class="form-group">
-              <label for="age">Age:</label>
-                <input type="number" class="form-control" id="age">
-          </div>
-        
-        <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
-
+			 <!-- Partie inscription accueil 2 -->
+			
+			  <div class="form-group">
+				  <label for="age">Age:</label>
+					<input type="number" class="form-control" id="age">
+			  </div>
+			
+			<button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
+		</form>
 
       </div>
     </div>

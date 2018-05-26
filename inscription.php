@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
   <head>
     <title>Inscription</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="bootstrap-4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,10 +41,9 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h2>Moi aussi !</h2> 
-        <p>Trouver la personne qui vous convient le mieux !</p> 
+        <h2> Enregistrement </h2> 
         
-
+        
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
         <div class="row">
@@ -76,7 +75,77 @@
               <label for="age">Age:</label>
                 <input type="number" class="form-control" id="age">
           </div>
+		  
+		  
+			<div class="form-group">
+				<label for="pseudo">Pseudo</label>
+				<input type="email" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
+				
+			</div>
+			
+		<div class="row">
+          <div class="col-md-4">	
+			<div class="form-group">
+				<label for="password">Mot de Passe</label>
+				<input type="password" class="form-control" id="password" placeholder="Mot de Passe">
+			</div>
+		</div>
+
+          <div class="offset-md-1 col-md-4">
+			<div class="form-group">
+				<label for="passwordConfirmation">Confirmation Mot de Passe</label>
+				<input type="password" class="form-control" id="passwordConfirmation" placeholder="Veuillez resaisir le Mot de Passe">
+			</div>
+		   </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-md-4">	
+			<div class="form-group">
+				<label for="email">Mot de Passe</label>
+				<input type="email" class="form-control" id="email" placeholder="email">
+			</div>
+		</div>
+
+          <div class="offset-md-1 col-md-4">
+			<div class="form-group row">
+				<label for="emailConfirmation">Confirmation Mot de Passe</label>
+				<input type="email" class="form-control" id="emailConfirmation" placeholder="Veuillez resaisir votre email">
+			</div>
+		   </div>
+        </div>
         
+	<fieldset>
+		<legend>Veuillez sélectionner vos intérêts</legend>
+		<div>
+		  <input type="checkbox" id="coding" name="interest" value="coding">
+		  <label for="coding">Développement</label>
+		</div>
+		<div>
+		  <input type="checkbox" id="music" name="interest" value="music">
+		  <label for="music">Musique</label>
+		</div>
+		<div>
+		  <input type="checkbox" id="art" name="interest" value="art">
+		  <label for="art">Art</label>
+		</div>
+		<div>
+		  <input type="checkbox" id="sports" name="interest" value="sports">
+		  <label for="sports">Sports</label>
+		</div>
+		<div>
+		  <input type="checkbox" id="cooking" name="interest" value="cooking">
+		  <label for="cooking">Cuisine</label>
+		</div>
+		<div>
+		  <input type="checkbox" id="other" name="interest" value="other">
+		  <label for="other">Autre</label>
+		  <input type="text" id="otherValue" name="other">
+		</div>
+    
+  </fieldset>
+		
+		
         <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
 
 

@@ -45,7 +45,7 @@
         
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
-        <form>
+        <form action ="" method="POST">
 			<div class="form-group">
 				<label for="pseudo">Pseudo</label>
 				<input type="email" class="form-control" id="pseudo" placeholder="Entrez Pseudo">

@@ -15,8 +15,24 @@ body{
 	width: 300px;
 }
 
+#pseudo{
+
+	width: 300px;
+}
+
 .container {
 	padding-top: 60px;
 
 
+}
+
+fieldset {
+  
+  border: 10px solid black;
+}
+
+legend {
+  padding: 10px;
+  
+  
 }
