@@ -154,7 +154,7 @@
 		</fieldset>
 		
 		
-		<fieldset id="field1">
+		<fieldset id="field2">
 			<legend>Avez vous des enfants ?</legend>
 			<div>
 			  <input type="radio" id="havechild" name="havechild" value="yes">
@@ -174,7 +174,7 @@
 			
 		</fieldset>
 		
-		<fieldset id="field1">
+		<fieldset id="field3">
 			<legend>Voulez-vous des enfants ? </legend>
 			<div>
 			  <input type="radio" id="wantchild" name="wantchild" value="yes">
@@ -240,7 +240,7 @@
 			
 		</fieldset>
         
-		<fieldset id="field1">
+		<fieldset id="field4">
 			<legend>Situation Familiale</legend>
 			<div>
 			  <input type="radio" id="celibataire" name="situation" value="celibataire">
@@ -277,7 +277,7 @@
 		</fieldset>
   
   
-		<fieldset id="field2">
+		<fieldset id="field5">
 			<legend>Quel est votre poids ? </legend>
 			<div>
 			  <input type="radio" id="weightxs" name="weight" value="weightxs">
@@ -307,7 +307,7 @@
 		</fieldset>
 		
 		
-		<fieldset id="field2">
+		<fieldset id="field6">
 			<legend>Quel est votre couleur de cheveux? </legend>
 			<div>
 			  <input type="radio" id="hairbrown" name="haircolor" value="hairbrown">
@@ -349,71 +349,72 @@
 		
 		
 		
-		<fieldset id="field2">
-			<legend>Quel est votre taille ? </legend>
+		<fieldset id="field7">
+			<legend>Quel est votre religion? </legend>
 			<div>
-			  <input type="radio" id="heightxs" name="height" value="heightxs">
-			  <label for="heightxs"> Très Petit</label>
+			  <input type="radio" id="religionchrist" name="religion" value="religionchrist">
+			  <label for="religionchrist"> Christianisme</label>
 			</div>
 			<div>
-			  <input type="radio" id="heights" name="height" value="heights">
-			  <label for="heights">Petit</label>
+			  <input type="radio" id="religionislam" name="religion" value="religionislam">
+			  <label for="religionislam">Islam</label>
 			</div>
 			<div>
-			  <input type="radio" id="heightm" name="height" value="heightm">
-			  <label for="heightm">Moyen</label>
+			  <input type="radio" id="religionBouddh" name="religion" value="religionBouddh">
+			  <label for="religionBouddh">Bouddhisme</label>
 			</div>
 			<div>
-			  <input type="radio" id="heightl" name="height" value="heightl">
-			  <label for="heightl">Grand</label>
+			  <input type="radio" id="religionjud" name="religion" value="religionjud">
+			  <label for="religionjud">Judaïsme</label>
 			</div>
 			<div>
-			  <input type="radio" id="heightxl" name="height" value="heightxl">
-			  <label for="heightxl">Tres Grand </label>
+			  <input type="radio" id="religionhind" name="religion" value="religionhind">
+			  <label for="religionhind">Hindouisme </label>
 			</div>
+			
 			<div>
-			  <input type="radio" id="heightnon" name="height" value="heightnon">
-			  <label for="heightnon">Ne souhaite pas répondre</label>
+			  <input type="radio" id="religionath" name="religion" value="religionath">
+			  <label for="religionath">Athéïsme</label>
+			</div>
+			
+			<div>
+			  <input type="radio" id="religionother" name="religion" value="religionother">
+			  <label for="religionother">Autre : </label>
+			  <input type="text" id="otherValue" name="other">
+
+			</div>
+			
+			<div>
+			  <input type="radio" id="religionnone" name="religion" value="religionnone">
+			  <label for="religionnone">Ne souhaite pas répondre</label>
 			</div>	
 		
 		</fieldset>
 		
 		
-				<fieldset id="field2">
-			<legend>Quel est votre taille ? </legend>
+		<fieldset id="field8">
+			<legend>Est ce que vous fumez? </legend>
 			<div>
-			  <input type="radio" id="heightxs" name="height" value="heightxs">
-			  <label for="heightxs"> Très Petit</label>
+			  <input type="radio" id="yousmokeoui" name="yousmoke" value="yousmokeoui">
+			  <label for="yousmokeyes"> Oui</label>
 			</div>
 			<div>
-			  <input type="radio" id="heights" name="height" value="heights">
-			  <label for="heights">Petit</label>
+			  <input type="radio" id="yousmokenon" name="yousmoke" value="yousmokenon">
+			  <label for="yousmokenon">Non</label>
 			</div>
+			
 			<div>
-			  <input type="radio" id="heightm" name="height" value="heightm">
-			  <label for="heightm">Moyen</label>
-			</div>
-			<div>
-			  <input type="radio" id="heightl" name="height" value="heightl">
-			  <label for="heightl">Grand</label>
-			</div>
-			<div>
-			  <input type="radio" id="heightxl" name="height" value="heightxl">
-			  <label for="heightxl">Tres Grand </label>
-			</div>
-			<div>
-			  <input type="radio" id="heightnon" name="height" value="heightnon">
-			  <label for="heightnon">Ne souhaite pas répondre</label>
+			  <input type="radio" id="yousmokenone" name="yousmoke" value="yousmokenone">
+			  <label for="yousmokenone">Ne souhaite pas répondre</label>
 			</div>	
 		
 		</fieldset>
 		
-		
-		<fieldset id="field2">
-			<legend>Veuillez sélectionner vos intérêts</legend>
+		<fieldset id="field9">
+			<legend>Veuillez sélectionner vos centres d'intérêts</legend>
 			<div>
 			  <input type="checkbox" id="coding" name="interest" value="coding">
-			  <label for="coding">Développement</label>
+			  <label for="coding">Informatique</label>
 			</div>
 			<div>
 			  <input type="checkbox" id="music" name="interest" value="music">
@@ -431,43 +432,51 @@
 			  <input type="checkbox" id="cooking" name="interest" value="cooking">
 			  <label for="cooking">Cuisine</label>
 			</div>
+			
 			<div>
-			  <input type="checkbox" id="other" name="interest" value="other">
-			  <label for="other">Autre</label>
-			  <input type="text" id="otherValue" name="other">
-			</div>	
-		
-		</fieldset>
-		
-		
-		<fieldset id="field2">
-			<legend>Veuillez sélectionner vos intérêts</legend>
-			<div>
-			  <input type="checkbox" id="coding" name="interest" value="coding">
-			  <label for="coding">Développement</label>
+			  <input type="checkbox" id="electronic" name="interest" value="electronic">
+			  <label for="electronic">Electronique</label>
 			</div>
+			
 			<div>
-			  <input type="checkbox" id="music" name="interest" value="music">
-			  <label for="music">Musique</label>
+			  <input type="checkbox" id="gaming" name="interest" value="gaming">
+			  <label for="gaming">Jeux videos</label>
 			</div>
+			
 			<div>
-			  <input type="checkbox" id="art" name="interest" value="art">
-			  <label for="art">Art</label>
+			  <input type="checkbox" id="photo" name="interest" value="photo">
+			  <label for="photo">Photographie</label>
 			</div>
-			<div>
-			  <input type="checkbox" id="sports" name="interest" value="sports">
-			  <label for="sports">Sports</label>
-			</div>
+			
 			<div>
 			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Cuisine</label>
+			  <label for="cooking">Couture</label>
 			</div>
+			
 			<div>
-			  <input type="checkbox" id="other" name="interest" value="other">
-			  <label for="other">Autre</label>
-			  <input type="text" id="otherValue" name="other">
-			</div>	
+			  <input type="checkbox" id="cooking" name="interest" value="cooking">
+			  <label for="cooking">Bricolage</label>
+			</div>
+			
+			<div>
+			  <input type="checkbox" id="cooking" name="interest" value="cooking">
+			  <label for="cooking">Jardinage</label>
+			</div>
+			
+			<div>
+			  <input type="checkbox" id="cooking" name="interest" value="cooking">
+			  <label for="cooking">Lecture</label>
+			</div>
+	
+			<div>
+			  <input type="checkbox" id="cooking" name="interest" value="cooking">
+			  <label for="cooking">Film/Série</label>
+			</div>
 		
+			<div>
+			  <input type="checkbox" id="cooking" name="interest" value="cooking">
+			  <label for="cooking">Animation Japonaise</label>
+			</div>
 		</fieldset>
 		
 		
