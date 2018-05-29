@@ -11,18 +11,17 @@ body{
 }
 
 #age{
-
 	width: 300px;
 }
 
 #pseudo{
-
 	width: 300px;
 }
 
 .container {
 	padding-top: 60px;
-
-
 }
 
+.hidden {
+	display: none;
+}

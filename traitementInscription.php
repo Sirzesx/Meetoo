@@ -1,11 +1,9 @@
 <?php
-    try{
-        $bdd = new PDO('mysql:host=localhost;dbname=metoo;charset=utf8', 'root', '');
-    }
-    catch(Exception $e){
-        die('Erreur : '.$e->getMessage());
-    }
 
+    require 'function.php';
+
+    $bdd = connectionBDD();
+    
     $bdd->prepare('INSERT INTO utilisateurs(pseudo, nom, prenom, dateNaissance, age, sexe, mdp, email) 
     VALUES(:pseudo, :nom, :prenom, :dateNaissance, :age, :sexe, :mdp, :email)');
     $bdd->execute(array(

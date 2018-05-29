@@ -94,8 +94,7 @@
 		  
 		<div class="form-group">
 				<label for="pseudo">Pseudo</label>
-				<input type="email" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
-				
+				<input type="text" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
 		</div>
 			
 		<div class="row">
