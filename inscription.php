@@ -309,14 +309,14 @@
 		
 		
 		<fieldset id="field2">
-			<legend>Quel est votre couleur de peau? </legend>
+			<legend>Quel est votre couleur de cheveux? </legend>
 			<div>
 			  <input type="radio" id="hairbrown" name="haircolor" value="hairbrown">
-			  <label for="hairbrown">Blanc</label>
+			  <label for="hairbrown">Brun(e)</label>
 			</div>
 			<div>
 			  <input type="radio" id="hairblond" name="haircolor" value="hairblond">
-			  <label for="hairblond">Noir </label>
+			  <label for="hairblond">Blond(e) </label>
 			</div>
 			<div>
 			  <input type="radio" id="hairred" name="haircolor" value="hairred">
@@ -334,7 +334,23 @@
 		
 		</fieldset>
 		
-				<fieldset id="field2">
+		
+		<SELECT NAME="Region" onChange='Choix(this.form)'>
+			<OPTION>-- Choisissez votre continent d'origine ---</OPTION>
+			<OPTION>Amerique</OPTION>
+			<OPTION>Europe</OPTION>
+			<OPTION>Asie</OPTION>
+			<OPTION>Afrique</OPTION>
+			<OPTION>Océanie</OPTION>
+			
+		</SELECT>
+		
+		<SELECT NAME="Pays"> <OPTION>-- Choisissez votre pays d'origine ---</OPTION> <OPTION></OPTION> <OPTION></OPTION> <OPTION></OPTION> </SELECT>
+		
+		
+		
+		
+		<fieldset id="field2">
 			<legend>Quel est votre taille ? </legend>
 			<div>
 			  <input type="radio" id="heightxs" name="height" value="heightxs">
