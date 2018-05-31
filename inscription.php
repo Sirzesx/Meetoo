@@ -195,7 +195,7 @@
 		</fieldset>
 		
 		
-		<fieldset id="Niveau d'études">
+		<fieldset id="field4">
 			<legend>Quel est votre niveau d'étude</legend>
 			<div>
 			  <input type="radio" id="none" name="etude" value="none">
@@ -240,7 +240,7 @@
 			
 		</fieldset>
         
-		<fieldset id="field4">
+		<fieldset id="field5">
 			<legend>Situation Familiale</legend>
 			<div>
 			  <input type="radio" id="celibataire" name="situation" value="celibataire">
@@ -277,7 +277,7 @@
 		</fieldset>
   
   
-		<fieldset id="field5">
+		<fieldset id="field6">
 			<legend>Quel est votre poids ? </legend>
 			<div>
 			  <input type="radio" id="weightxs" name="weight" value="weightxs">
@@ -307,7 +307,7 @@
 		</fieldset>
 		
 		
-		<fieldset id="field6">
+		<fieldset id="field7">
 			<legend>Quel est votre couleur de cheveux? </legend>
 			<div>
 			  <input type="radio" id="hairbrown" name="haircolor" value="hairbrown">
@@ -334,22 +334,26 @@
 		</fieldset>
 		
 		
-		<SELECT NAME="Region" onChange='Choix(this.form)'>
-			<OPTION>-- Choisissez votre continent d'origine ---</OPTION>
-			<OPTION>Amerique</OPTION>
-			<OPTION>Europe</OPTION>
-			<OPTION>Asie</OPTION>
-			<OPTION>Afrique</OPTION>
-			<OPTION>Océanie</OPTION>
-			
-		</SELECT>
+		<fieldset id="field8">
+			<legend> Veuillez selectionner votre pays d'origine </legend>
 		
-		<SELECT NAME="Pays"> <OPTION>-- Choisissez votre pays d'origine ---</OPTION> <OPTION></OPTION> <OPTION></OPTION> <OPTION></OPTION> </SELECT>
+			<select name="pays" id="pays">
+				<?php
+					$liste_pays= fopen("liste_pays.txt","r");
+					while($ligne=fgets($liste_pays,1024))
+					{
+						$ligne=explode(';',$ligne);
+						if ($ligne[1]=='FR') echo '<option value='.$ligne[1].' selected="selected">'.$ligne[2].'</option>';
+						else echo '<option value='.$ligne[1].'>'.$ligne[2].'</option>';
+					}
+				?>
+			</select>
+		
+		</fieldset>
 		
 		
 		
-		
-		<fieldset id="field7">
+		<fieldset id="field9">
 			<legend>Quel est votre religion? </legend>
 			<div>
 			  <input type="radio" id="religionchrist" name="religion" value="religionchrist">
@@ -392,7 +396,7 @@
 		</fieldset>
 		
 		
-		<fieldset id="field8">
+		<fieldset id="field10">
 			<legend>Est ce que vous fumez? </legend>
 			<div>
 			  <input type="radio" id="yousmokeoui" name="yousmoke" value="yousmokeoui">
@@ -410,7 +414,7 @@
 		
 		</fieldset>
 		
-		<fieldset id="field9">
+		<fieldset id="field11">
 			<legend>Veuillez sélectionner vos centres d'intérêts</legend>
 			<div>
 			  <input type="checkbox" id="coding" name="interest" value="coding">
