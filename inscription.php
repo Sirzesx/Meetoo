@@ -1,23 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <title>Inscription</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
     <link href="bootstrap-4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
   </head>
 
 
 <!-- Corps du Site -->
+
+
   <body>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -38,12 +45,19 @@
     </nav>
 
 
+  
 
+
+
+
+
+<form id="regForm" action="/action_page.php"> <!-- action à modifier -->
+  <h1>Register:</h1>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron">	<!-- retirer Register ou Enregistrement -->
         <h2> Enregistrement </h2> 
         
-        
+        <div class="tab">
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
         <div class="row">
@@ -68,8 +82,9 @@
             </div>
           </div>
         </div>
-
+    </div>
          <!-- Partie inscription accueil 2 -->
+        <div class="tab">
 		<div class="row">
 			<div class="col-md-3">
 				<div class="form-group">
@@ -78,7 +93,7 @@
 				</div>
 			</div>
 			
-			<div class="offset-md-1 col-md-3">
+			<div class="offset-md-2 col-md-3">
 				<div class="form-group">
 					<label for="prenom">Prénom:</label>
 					   <input type="text" class="form-control" id="age">
@@ -86,10 +101,12 @@
 			</div>
 		</div>
 		
+		
 		<div class="form-group">
               <label for="dateN">date de naissance:</label>
                 <input type="date" class="form-control" id="dateN">
 		</div>
+		
 		  
 		  
 		<div class="form-group">
@@ -129,9 +146,10 @@
 		   </div>
         </div>
 		
-		
+		</div>
+		<div class="tab">
 		<fieldset id="field1">
-			<legend>Type de Relation recherché</legend>
+			<legend>Type de relation recherchée</legend>
 			<div>
 			  <input type="radio" id="long" name="relationship" value="long">
 			  <label for="long">Sérieux</label>
@@ -152,10 +170,12 @@
 		
 		
 		</fieldset>
+		</div>
 		
-		
+
+		<div class="tab">
 		<fieldset id="field2">
-			<legend>Avez vous des enfants ?</legend>
+			<legend>Avez-vous des enfants ?</legend>
 			<div>
 			  <input type="radio" id="havechild" name="havechild" value="yes">
 			  <label for="havechild">Oui combien?</label>
@@ -173,7 +193,7 @@
 			</div>
 			
 		</fieldset>
-		
+		<br />
 		<fieldset id="field3">
 			<legend>Voulez-vous des enfants ? </legend>
 			<div>
@@ -194,9 +214,12 @@
 			
 		</fieldset>
 		
-		
+		</div>
+
+
+		<div class="tab">
 		<fieldset id="field4">
-			<legend>Quel est votre niveau d'étude</legend>
+			<legend>Quel est votre niveau d'études</legend>
 			<div>
 			  <input type="radio" id="none" name="etude" value="none">
 			  <label for="none">Pas de diplôme</label>
@@ -239,7 +262,9 @@
 			</div>
 			
 		</fieldset>
-        
+        </div>
+
+        <div class="tab">
 		<fieldset id="field5">
 			<legend>Situation Familiale</legend>
 			<div>
@@ -275,8 +300,9 @@
 			
 		
 		</fieldset>
-  
-  
+  		</div>
+
+  		<div class="tab">
 		<fieldset id="field6">
 			<legend>Quel est votre poids ? </legend>
 			<div>
@@ -305,8 +331,9 @@
 			</div>	
 		
 		</fieldset>
-		
-		
+		</div>
+
+		<div class="tab">
 		<fieldset id="field7">
 			<legend>Quel est votre couleur de cheveux? </legend>
 			<div>
@@ -324,7 +351,7 @@
 			
 			<div>
 			  <input type="radio" id="hairother" name="haircolor" value="hairother">
-			  <label for="hairother">A préciser </label>
+			  <label for="hairother">A préciser </label> <!-- ??? -->
 			</div>
 			<div>
 			  <input type="radio" id="hairnone" name="haircolor" value="hairnone">
@@ -332,8 +359,8 @@
 			</div>	
 		
 		</fieldset>
-		
-		
+		</div>
+		<div class="tab">
 		<fieldset id="field8">
 			<legend> Veuillez selectionner votre pays d'origine </legend>
 		
@@ -350,9 +377,9 @@
 			</select>
 		
 		</fieldset>
+		</div>
 		
-		
-		
+		<div class="tab">
 		<fieldset id="field9">
 			<legend>Quel est votre religion? </legend>
 			<div>
@@ -394,13 +421,13 @@
 			</div>	
 		
 		</fieldset>
-		
-		
+		</div>
+		<div class="tab">
 		<fieldset id="field10">
-			<legend>Est ce que vous fumez? </legend>
+			<legend>Est-ce que vous fumez ? </legend>
 			<div>
 			  <input type="radio" id="yousmokeoui" name="yousmoke" value="yousmokeoui">
-			  <label for="yousmokeyes"> Oui</label>
+			  <label for="yousmokeyes">Oui</label>
 			</div>
 			<div>
 			  <input type="radio" id="yousmokenon" name="yousmoke" value="yousmokenon">
@@ -413,7 +440,9 @@
 			</div>	
 		
 		</fieldset>
+	</div>
 		
+		<div class="tab">
 		<fieldset id="field11">
 			<legend>Veuillez sélectionner vos centres d'intérêts</legend>
 			<div>
@@ -483,18 +512,40 @@
 			</div>
 		</fieldset>
 		
+		</div>
 		
+
 		
-		
-    <button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>
+    <!--<button type="submit" class="btn btn-primary btn-md">Etape Suivante</button>-->
 
 
       </div>
     </div>
 
+    <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>			
+  </div>
+</form>
 
-
-
+	<script type="text/javascript" src="js/inscription.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap-4.1.0/dist/js/bootstrap.min.js"></script>
   </body>
