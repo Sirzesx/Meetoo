@@ -1,13 +1,14 @@
 body{
 
 	background-image: url("img/coupleP.jpg");
-
+	background-repeat: no-repeat;
 }
 
 .jumbotron { 
     background-color:hsl(180,100%,25%,0.2); /* Rose */
     color: #ffffff; //blanc
     background-image: url("img/coeur.jpg");  /* Image non fonctionnel */
+	
 }
 
 #age{
@@ -38,7 +39,7 @@ body{
 
 #regForm {
   /*background-color: #ffffff;*/
-  margin: 100px auto;
+  margin: 0px auto;
   font-family: Raleway;
   padding: 40px;
   width: 70%;

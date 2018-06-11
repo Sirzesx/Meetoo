@@ -52,7 +52,6 @@
 
 
 <form id="regForm" action="/action_page.php"> <!-- action à modifier -->
-  <h1>Register:</h1>
     <div class="container">
       <div class="jumbotron">	<!-- retirer Register ou Enregistrement -->
         <h2> Enregistrement </h2> 
