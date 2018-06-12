@@ -49,8 +49,6 @@
 
 
 
-
-
 <form id="regForm" action="/action_page.php"> <!-- action à modifier -->
     <div class="container">
       <div class="jumbotron">	<!-- retirer Register ou Enregistrement -->
@@ -85,17 +83,17 @@
          <!-- Partie inscription accueil 2 -->
         <div class="tab">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-5">
 				<div class="form-group">
 					<label for="nom">Nom:</label>
-					   <input type="text" class="form-control" id="age">
+					   <input type="text" class="form-control" id="nom">
 				</div>
 			</div>
 			
-			<div class="offset-md-2 col-md-3">
+			<div class="offset-md-1 col-md-5">
 				<div class="form-group">
 					<label for="prenom">Prénom:</label>
-					   <input type="text" class="form-control" id="age">
+					   <input type="text" class="form-control" id="prenom">
 				</div>
 			</div>
 		</div>
@@ -114,14 +112,14 @@
 		</div>
 			
 		<div class="row">
-          <div class="col-md-4">	
+          <div class="col-md-5">	
 			<div class="form-group">
 				<label for="password">Mot de Passe</label>
 				<input type="password" class="form-control" id="password" placeholder="Mot de Passe">
 			</div>
 		</div>
 
-        <div class="offset-md-1 col-md-4">
+        <div class="offset-md-1 col-md-5">
 			<div class="form-group">
 				<label for="passwordConfirmation">Confirmation Mot de Passe</label>
 				<input type="password" class="form-control" id="passwordConfirmation" placeholder="Veuillez resaisir le Mot de Passe">
@@ -130,14 +128,14 @@
         </div>
 		
 		<div class="row">
-          <div class="col-md-4">	
+          <div class="col-md-5">	
 			<div class="form-group">
 				<label for="email">Email</label>
 				<input type="email" class="form-control" id="email" placeholder="email">
 			</div>
 		</div>
 
-          <div class="offset-md-1 col-md-4">
+          <div class="offset-md-1 col-md-5">
 			<div class="form-group row">
 				<label for="emailConfirmation">Confirmation Email</label>
 				<input type="email" class="form-control" id="emailConfirmation" placeholder="Veuillez resaisir votre email">
@@ -150,21 +148,21 @@
 		<fieldset id="field1">
 			<legend>Type de relation recherchée</legend>
 			<div>
-			  <input type="radio" id="long" name="relationship" value="long">
-			  <label for="long">Sérieux</label>
+			  <input type="radio" id="RSlong" name="relationship" value="RSlong">
+			  <label for="RSlong">Sérieux</label>
 			</div>
 			<div>
-			  <input type="radio" id="rapide" name="relationship" value="rapide">
-			  <label for="rapide">Sans engagement</label>
+			  <input type="radio" id="RSrapide" name="relationship" value="RSrapide">
+			  <label for="RSrapide">Sans engagement</label>
 			</div>
 			<div>
-			  <input type="radio" id="ami" name="relationship" value="ami">
-			  <label for="ami">Ami</label>
+			  <input type="radio" id="RSami" name="relationship" value="RSami">
+			  <label for="RSami">Ami</label>
 			</div>
 			
 			<div>
-			  <input type="radio" id="inconnu" name="relationship" value="inconnu">
-			  <label for="inconnu">Je ne sais pas </label>
+			  <input type="radio" id="RSinconnu" name="relationship" value="RSinconnu">
+			  <label for="RSinconnu">Je ne sais pas </label>
 			</div>
 		
 		
@@ -176,19 +174,19 @@
 		<fieldset id="field2">
 			<legend>Avez-vous des enfants ?</legend>
 			<div>
-			  <input type="radio" id="havechild" name="havechild" value="yes">
-			  <label for="havechild">Oui combien?</label>
-			  <input type="number" id="otherValue" name="other">
+			  <input type="radio" id="hcyes" name="havechild" value="yes">
+			  <label for="hcyes">Oui combien?</label>
+			  <input type="number" id="hcyesV" name="havechild">
 			</div>
 			
 			<div>
-			  <input type="radio" id="havechild" name="havechild" value="non">
-			  <label for="havechild">Non</label>
+			  <input type="radio" id="hcnon" name="havechild" value="non">
+			  <label for="hcnon">Non</label>
 			</div>
 			
 			<div>
-			  <input type="radio" id="childnon" name="height" value="heightnon">
-			  <label for="heightnon">Ne souhaite pas répondre</label>
+			  <input type="radio" id="hcunk" name="havechild" value="unknown">
+			  <label for="hcunk">Ne souhaite pas répondre</label>
 			</div>
 			
 		</fieldset>
@@ -196,19 +194,19 @@
 		<fieldset id="field3">
 			<legend>Voulez-vous des enfants ? </legend>
 			<div>
-			  <input type="radio" id="wantchild" name="wantchild" value="yes">
-			  <label for="wantchild">Oui combien?</label>
-			  <input type="number" id="otherValue" name="other">
+			  <input type="radio" id="wcyes" name="wantchild" value="yes">
+			  <label for="wcyes">Oui combien?</label>
+			  <input type="number" id="wcyesV" name="wantchild">
 			</div>
 			
 			<div>
-			  <input type="radio" id="wantchild" name="wantchild" value="non">
-			  <label for="wantchild">Non</label>
+			  <input type="radio" id="wcnon" name="wantchild" value="non">
+			  <label for="wcnon">Non</label>
 			</div>
 			
 			<div>
-			  <input type="radio" id="wantchildnon" name="height" value="heightnon">
-			  <label for="heightnon">Ne souhaite pas répondre</label>
+			  <input type="radio" id="wcunk" name="wantchild" value="unknown">
+			  <label for="wcunk">Ne souhaite pas répondre</label>
 			</div>
 			
 		</fieldset>
@@ -220,44 +218,44 @@
 		<fieldset id="field4">
 			<legend>Quel est votre niveau d'études</legend>
 			<div>
-			  <input type="radio" id="none" name="etude" value="none">
-			  <label for="none">Pas de diplôme</label>
+			  <input type="radio" id="Gnone" name="Etude" value="none">
+			  <label for="Gnone">Pas de diplôme</label>
 			</div>
 			<div>
-			  <input type="radio" id="brevet" name="etude" value="brevet">
-			  <label for="brevet">Brevet</label>
+			  <input type="radio" id="Gbrevet" name="etude" value="brevet">
+			  <label for="Gbrevet">Brevet</label>
 			</div>
 			<div>
-			  <input type="radio" id="capbep" name="etude" value="capbep">
-			  <label for="capbep">CAP / BEP </label>
+			  <input type="radio" id="Gcapbep" name="etude" value="capbep">
+			  <label for="Gcapbep">CAP / BEP </label>
 			</div>
 			<div>
-			  <input type="radio" id="bac" name="etude" value="bac">
-			  <label for="bac">BAC</label>
+			  <input type="radio" id="Gbac" name="etude" value="bac">
+			  <label for="Gbac">BAC</label>
 			</div>
 			<div>
-			  <input type="radio" id="bac2" name="etude" value="bac2">
-			  <label for="bac2">BAC +2</label>
-			</div>
-			
-			<div>
-			  <input type="radio" id="bac3" name="etude" value="bac3">
-			  <label for="bac3">BAC +3</label>
+			  <input type="radio" id="Gbac2" name="etude" value="bac2">
+			  <label for="Gbac2">BAC +2</label>
 			</div>
 			
 			<div>
-			  <input type="radio" id="bac5" name="etude" value="bac5">
-			  <label for="bac5">BAC +5 ou plus</label>
-			</div>
-			<div>
-			  <input type="radio" id="other" name="etude" value="other">
-			  <label for="other">Autre</label>
-			  <input type="text" id="otherValue" name="other">
+			  <input type="radio" id="Gbac3" name="etude" value="bac3">
+			  <label for="Gbac3">BAC +3</label>
 			</div>
 			
 			<div>
-			  <input type="radio" id="etudenon" name="height" value="heightnon">
-			  <label for="heightnon">Ne souhaite pas répondre</label>
+			  <input type="radio" id="Gbac5" name="etude" value="bac5">
+			  <label for="Gbac5">BAC +5 ou plus</label>
+			</div>
+			<div>
+			  <input type="radio" id="Gother" name="etude" value="other">
+			  <label for="Gother">Autre</label>
+			  <input type="text" id="GotherValue" name="etude">
+			</div>
+			
+			<div>
+			  <input type="radio" id="Gunk" name="unknown" value="unknown">
+			  <label for="Gunk">Ne souhaite pas répondre</label>
 			</div>
 			
 		</fieldset>
@@ -327,6 +325,7 @@
 			<div>
 			  <input type="radio" id="weightnon" name="weight" value="weightnon">
 			  <label for="weightnon">Ne souhaite pas répondre</label>
+			  
 			</div>	
 		
 		</fieldset>
@@ -350,7 +349,8 @@
 			
 			<div>
 			  <input type="radio" id="hairother" name="haircolor" value="hairother">
-			  <label for="hairother">A préciser </label> <!-- ??? -->
+			  <label for="hairother">A préciser </label> 
+			  <input type="text" id="otherValue" name="haircolor">
 			</div>
 			<div>
 			  <input type="radio" id="hairnone" name="haircolor" value="hairnone">
@@ -442,76 +442,97 @@
 	</div>
 		
 		<div class="tab">
-		<fieldset id="field11">
-			<legend>Veuillez sélectionner vos centres d'intérêts</legend>
-			<div>
-			  <input type="checkbox" id="coding" name="interest" value="coding">
-			  <label for="coding">Informatique</label>
-			</div>
-			<div>
-			  <input type="checkbox" id="music" name="interest" value="music">
-			  <label for="music">Musique</label>
-			</div>
-			<div>
-			  <input type="checkbox" id="art" name="interest" value="art">
-			  <label for="art">Art</label>
-			</div>
-			<div>
-			  <input type="checkbox" id="sports" name="interest" value="sports">
-			  <label for="sports">Sports</label>
-			</div>
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Cuisine</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="electronic" name="interest" value="electronic">
-			  <label for="electronic">Electronique</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="gaming" name="interest" value="gaming">
-			  <label for="gaming">Jeux videos</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="photo" name="interest" value="photo">
-			  <label for="photo">Photographie</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Couture</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Bricolage</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Jardinage</label>
-			</div>
-			
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Lecture</label>
-			</div>
-	
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Film/Série</label>
-			</div>
+			<fieldset id="field11">
+				<legend>Veuillez sélectionner vos centres d'intérêts</legend>
+				<div>
+				  <input type="checkbox" id="coding" name="interest" value="coding">
+				  <label for="coding">Informatique</label>
+				</div>
+				<div>
+				  <input type="checkbox" id="music" name="interest" value="music">
+				  <label for="music">Musique</label>
+				</div>
+				<div>
+				  <input type="checkbox" id="art" name="interest" value="art">
+				  <label for="art">Art</label>
+				</div>
+				<div>
+				  <input type="checkbox" id="sports" name="interest" value="sports">
+				  <label for="sports">Sports</label>
+				</div>
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Cuisine</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="electronic" name="interest" value="electronic">
+				  <label for="electronic">Electronique</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="gaming" name="interest" value="gaming">
+				  <label for="gaming">Jeux videos</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="photo" name="interest" value="photo">
+				  <label for="photo">Photographie</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Couture</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Bricolage</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Jardinage</label>
+				</div>
+				
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Lecture</label>
+				</div>
 		
-			<div>
-			  <input type="checkbox" id="cooking" name="interest" value="cooking">
-			  <label for="cooking">Animation Japonaise</label>
-			</div>
-		</fieldset>
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Film/Série</label>
+				</div>
+			
+				<div>
+				  <input type="checkbox" id="cooking" name="interest" value="cooking">
+				  <label for="cooking">Animation Japonaise</label>
+				</div>
+			</fieldset>
 		
 		</div>
+		
+		<div class="tab">
+			<fieldset id="field10">
+				<legend>Choissez votre type de profil : </legend>
+				<div>
+				  <input type="radio" id="profilbronze" name="profiltype" value="profilbronze">
+				  <label for="profilbronze">Profil Bronze</label>
+				</div>
+				<div>
+				  <input type="radio" id="profilor" name="profiltype" value="profilor">
+				  <label for="profilor"> Profil Or</label>
+				</div>
+				
+				<div>
+				  <input type="radio" id="profilplatine" name="profiltype" value="profilplatine">
+				  <label for="profilplatine">Profil Platine</label>
+				</div>	
+			
+			</fieldset>
+	</div>
+		
 		
 
 		

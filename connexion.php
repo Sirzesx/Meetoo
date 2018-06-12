@@ -45,7 +45,7 @@
         
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
-        <form action ="" method="POST">
+        <form action ="" method="POST" id="formconnexion">
 			<div class="form-group">
 				<label for="pseudo">Pseudo</label>
 				<input type="email" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
@@ -55,7 +55,7 @@
 				<label for="password">Mot de Passe</label>
 				<input type="password" class="form-control" id="password" placeholder="Mot de Passe">
 			</div>
-			<button type="submit" class="btn btn-primary">Connexion</button>
+			<button type="submit" class="btn btn-primary">Se connecter</button>
 		</form>
 
 
