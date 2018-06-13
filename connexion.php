@@ -20,31 +20,33 @@
 <!-- Corps du Site -->
   <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand -->
-      <a class="navbar-brand" href="index.php">Logo</a>
-      
-      <!-- Links -->
-      <ul class="navbar-nav">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand -->
+		  <a class="navbar-brand" href="index.php">Logo</a>
+		  
+		  <!-- Links -->
+		  <ul class="navbar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link" href="connexion.php">Connexion</a>
-      </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="connexion.php">Connexion</a>
+			  </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="inscription.php">S'inscrire</a>
-      </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="inscription.php">S'inscrire</a>
+			  </li>
+		  </ul>
 
-    </nav>
+		</nav>
 
 
-
+<!--
     <div class="container">
       <div class="jumbotron">
         <h2>Connexion</h2> 
-        
+        -->
         <!--Debut de la partie inscription-->
         <!-- Partie inscription accueil 1 -->
+		<!--
         <form action ="" method="POST" id="formconnexion">
 			<div class="form-group">
 				<label for="pseudo">Pseudo</label>
@@ -62,7 +64,23 @@
       </div>
     </div>
 
+-->
+	<div class="container" id="containConnexion">
+		<div class="jumbotron" id="jumbConnexion">
+			<div class="text-center">
+				<form class="form-signin">
+				  <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
+				  <label for="inputEmail" class="sr-only">Email address</label>
+				  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+				  <label for="inputPassword" class="sr-only">Password</label>
+				  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
+				  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				  <p class="mt-5 mb-3 text-light">&copy; FIP1 2017-2018</p>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

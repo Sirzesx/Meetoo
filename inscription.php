@@ -34,14 +34,14 @@
       <!-- Links -->
       <ul class="navbar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link" href="connexion.php">Connexion</a>
-      </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="connexion.php">Connexion</a>
+		  </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="inscription.php">S'inscrire</a>
-      </li>
-
+		  <li class="nav-item">
+			<a class="nav-link" href="inscription.php">S'inscrire</a>
+		  </li>
+		</ul>
     </nav>
 
 
@@ -518,16 +518,16 @@
 				<legend>Choissez votre type de profil : </legend>
 				<div>
 				  <input type="radio" id="profilbronze" name="profiltype" value="profilbronze">
-				  <label for="profilbronze">Profil Bronze</label>
+				  <label for="profilbronze">Profil Bronze (gratuit)</label>
 				</div>
 				<div>
 				  <input type="radio" id="profilor" name="profiltype" value="profilor">
-				  <label for="profilor"> Profil Or</label>
+				  <label for="profilor"> Profil Or(1€/mois)</label>
 				</div>
 				
 				<div>
 				  <input type="radio" id="profilplatine" name="profiltype" value="profilplatine">
-				  <label for="profilplatine">Profil Platine</label>
+				  <label for="profilplatine">Profil Platine(5€/mois ou 100€ à vie) </label>
 				</div>	
 			
 			</fieldset>
