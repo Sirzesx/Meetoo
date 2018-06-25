@@ -1,0 +1,29 @@
+
+/* NavBar + profil*/
+
+.ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+	
+	
+#profile-image1 {
+    cursor: pointer;
+     width: 30px;
+    height: 30px;
+	border-radius: 50%;
+	}
+	
+
+/*	
+#jumbInCo {
+	background-color:white;
+	border-radius: 30px;
+}
+*/
+
+body{
+
+	background-color:#F0F8FF;
+	/*background-repeat: no-repeat;*/
+}

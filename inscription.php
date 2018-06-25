@@ -8,7 +8,7 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
     <link href="bootstrap-4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

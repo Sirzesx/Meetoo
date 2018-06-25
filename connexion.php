@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="bootstrap-4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,13 +65,13 @@
     </div>
 
 -->
-	<div class="container" id="containConnexion">
-		<div class="jumbotron" id="jumbConnexion">
+		<div class="container" id="containConnexion">
+			<div class="jumbotron" id="jumbConnexion">
 			<div class="text-center">
 				<form class="form-signin">
 				  <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
 				  <label for="inputEmail" class="sr-only">Email address</label>
-				  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+				  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
 				  <label for="inputPassword" class="sr-only">Password</label>
 				  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
