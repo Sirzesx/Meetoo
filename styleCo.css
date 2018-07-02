@@ -1,0 +1,45 @@
+
+/* NavBar + profil*/
+
+.ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+	
+	
+#profile-image1 {
+    cursor: pointer;
+     width: 30px;
+    height: 30px;
+	border-radius: 50%;
+	}
+	
+
+
+#jumbInCo {
+	background-color:#F0F8FF;
+	/*border-radius: 30px;*/
+}
+
+
+body{
+
+	background-color:#F0F8FF;
+	/*background-repeat: no-repeat;*/
+}
+
+.card{
+	box-shadow: 1px 1px 5px #555;
+	margin: 3px;
+	
+}
+
+#voirPlus{
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	}
+	
+#recherche{
+	cursor: pointer;
+	}
