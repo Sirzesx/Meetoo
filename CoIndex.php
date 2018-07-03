@@ -25,6 +25,34 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	
+	<script>
+	$(document).ready(function(){
+
+		$("#voirPlus").click(function(){
+			for (var i=1; i<6; i++) {
+				var txt=$("<div></div>");
+				$(".row").append(txt);
+				txt.addClass("card");
+				txt.css("width","13rem");
+				txt.append("<img>");
+				txt.children("img").addClass("card-img-top");
+				txt.children("img").attr("alt","Card image cap");
+				txt.children("img").attr("src","img/noImage.png");
+				txt.append("<div></div>");
+				txt.children("div").addClass("card-body");
+				txt.children("div").append("<h5> #Prenom , #Age </h5>");
+				txt.children("div").children("h5").addClass("card-title");
+				txt.children("div").append("<p> Type de relation : <br/>Ville: <br/>Description: </p>");
+				txt.children("div").children("p").addClass("card-text");
+				
+			}
+					
+		});
+
+	});
+</script>
   </head>
   
   
