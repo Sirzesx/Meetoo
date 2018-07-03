@@ -82,9 +82,9 @@
 						<img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <a class="dropdown-item" href="#">Profil</a>
+					  <a class="dropdown-item" href="profil.php">Profil</a>
 					  <a class="dropdown-item" href="#">Parametre</a>
-					  <a class="dropdown-item" href="#">Deconnexion</a>
+					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
 			</ul>
@@ -258,7 +258,7 @@
 							<select class="form-control" id="sel4">
 								<option value="0" selected="selected">Default</option>
 								<option value="1" >Serieux</option>
-								<option value="2" >Rapide</option>
+								<option value="2" >Sans engagement</option>
 								<option value="3" >Ami</option>
 							</select>
 						</div>

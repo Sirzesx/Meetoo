@@ -61,16 +61,128 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 						<img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <a class="dropdown-item" href="#">Profil</a>
+					  <a class="dropdown-item" href="profil.php">Profil</a>
 					  <a class="dropdown-item" href="#">Parametre</a>
-					  <a class="dropdown-item" href="#">Deconnexion</a>
+					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
 			</ul>
 
 		</nav>
-		
-		
+
+
+
+		<div class="container">
+		    <div class="row my-2">
+		        <div class="col-lg-8 order-lg-2">
+		            <ul class="nav nav-tabs">
+		                <li class="nav-item">
+		                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profil</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit </a>
+		                </li>
+		                <li class="nav-item">
+		                    <a href="" data-target="#edit-info-profil" data-toggle="tab" class="nav-link">Edit Information Profil</a>
+		                </li>
+		            </ul>
+
+		            <div class="tab-content py-4">
+		                <div class="tab-pane active" id="profile">
+		                    <h5 class="mb-3">User Profile</h5>
+		                    <div class="row">
+		                        <div class="col-md-6">
+		                            <h6>About</h6>
+		                            <p>
+		                                Web Designer, UI/UX Engineer
+		                            </p>
+		                            <h6>Hobbies</h6>
+		                            <p>
+		                                Indie music, skiing and hiking. I love the great outdoors.
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <!--/row-->
+		                </div>
+		                
+		                <div class="tab-pane" id="edit">
+		                    <form role="form">
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Pseudo</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="text" value="Jane">
+		                            </div>
+		                        </div>
+		                        
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="email" value="email@gmail.com">
+		                            </div>
+		                        </div>
+		                        
+		                        <div class="form-group row">
+		                        	
+		                            <label class="col-lg-3 col-form-label form-control-label"></label>
+		                            <div class="col-lg-6">
+		                                <input class="form-control" type="number" value="" placeholder="Code Postal">
+		                            </div>
+		                            <div class="col-lg-3">
+		                                <input class="form-control" type="text" value="" placeholder="Ville">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="text" value="janeuser">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="password" value="11111122333">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="password" value="11111122333">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label"></label>
+		                            <div class="col-lg-9">
+		                                <input type="reset" class="btn btn-secondary" value="Cancel">
+		                                <input type="button" class="btn btn-primary" value="Save Changes">
+		                            </div>
+		                        </div>
+		                    </form>
+		                </div>
+
+		                 <div class="tab-pane" id="edit-info-profil">
+		                    <form role="form">
+		                    	<div class="form-group row">
+		                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
+		                            <div class="col-lg-9">
+		                                <input class="form-control" type="text" value="janeuser">
+		                            </div>
+		                        </div>
+		                    </form>
+		                 </div>
+
+
+		            </div>
+		        </div>
+		        <div class="col-lg-4 order-lg-1 text-center">
+		            <img src="//placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+		            <h6 class="mt-2">Editer la photos</h6>
+		            <label class="custom-file">
+		                <input type="file" id="file" class="custom-file-input">
+		                <span class="custom-file-control">Choose file</span>
+		            </label>
+		        </div>
+		    </div>
+		</div>
 				
 	</body>
 	
@@ -134,7 +246,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 							<select class="form-control" id="sel4">
 								<option value="0" selected="selected">Default</option>
 								<option value="1" >Serieux</option>
-								<option value="2" >Rapide</option>
+								<option value="2" >Sans Engagement</option>
 								<option value="3" >Ami</option>
 							</select>
 						</div>
