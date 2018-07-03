@@ -48,7 +48,7 @@
 
 
 
-<form id="regForm" name="regForm" action="traitementInscription.php" onsubmit="return validateForm()" method="POST"> <!-- action à modifier -->
+<form id="regForm" name="regForm" action="traitementInscription.php" method="POST"> <!-- action à modifier -->
     <div class="container">
       <div class="jumbotron">	<!-- retirer Register ou Enregistrement -->
         <h2> Enregistrement </h2> 
@@ -85,14 +85,14 @@
 			<div class="col-md-5">
 				<div class="form-group">
 					<label for="nom">Nom:</label>
-					   <input type="text" class="form-control" id="nom">
+					   <input type="text" class="form-control" id="nom" name="nom">
 				</div>
 			</div>
 			
 			<div class="offset-md-1 col-md-5">
 				<div class="form-group">
 					<label for="prenom">Prénom:</label>
-					   <input type="text" class="form-control" id="prenom">
+					   <input type="text" class="form-control" id="prenom" name="prenom">
 				</div>
 			</div>
 		</div>
@@ -100,14 +100,14 @@
 		
 		<div class="form-group">
               <label for="dateN">date de naissance:</label>
-                <input type="date" class="form-control" id="dateN">
+                <input type="date" class="form-control" id="dateN" name="dateN">
 		</div>
 		
 		  
 		  
 		<div class="form-group">
 				<label for="pseudo">Pseudo</label>
-				<input type="text" class="form-control" id="pseudo" placeholder="Entrez Pseudo">
+				<input type="text" class="form-control" id="pseudo" placeholder="Entrez Pseudo" name="pseudo">
 				<span id="pseudo-dispo"></span>
 		</div>
 			
@@ -115,7 +115,7 @@
           <div class="col-md-5">	
 			<div class="form-group">
 				<label for="password">Mot de Passe</label>
-				<input type="password" class="form-control" id="password" placeholder="Mot de Passe">
+				<input type="password" class="form-control" id="password" placeholder="Mot de Passe" name="password">
 			</div>
 		</div>
 
@@ -131,7 +131,7 @@
           <div class="col-md-5">	
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input type="email" class="form-control" id="email" placeholder="email">
+				<input type="email" class="form-control" id="email" placeholder="email" name="email">
 			</div>
 		</div>
 

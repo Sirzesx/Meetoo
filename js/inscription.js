@@ -85,11 +85,17 @@ function validateForm() {
         alert("Name must be filled out");
         return false;
     }*/
-	$('input').each(function(){
-		if($(this).hasClass("champ-invalide")){
+	var fields = ["nom", "prenom", "pseudo", "dateN", "password", "passwordConfirmation", "email", "emailConfirmation"]
+
+	var i, l = fields.length;
+	var fieldname;
+	for (i = 0; i < l; i++) {
+		fieldname = fields[i];
+		if (!document.forms["regForm"][fieldname].hasClass("champ-valide")) {
 			return false;
 		}
-	})
+	}
+	return true;
 }
 
 $("#pseudo").keyup(function(e)
@@ -97,7 +103,6 @@ $("#pseudo").keyup(function(e)
 	if(e.target.value == "")
 		$("#pseudo-dispo").text("");
 	else {
-		
 		jQuery.ajax({
 			type: 'POST',
 			url: "http://localhost/Meetoo/function.php",
