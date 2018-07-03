@@ -1,7 +1,24 @@
+
+
+<?php /*
+session_start();
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', '');
+
+if(isset($_GET['id']) AND $_GET['id'] > 0) {
+   $getid = intval($_GET['id']);
+   $requser = $bdd->prepare('SELECT * FROM membres WHERE id = ?');
+   $requser->execute(array($getid));
+   $userinfo = $requser->fetch();
+
+  */ 
+   ?>
+   
+   
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Connexion</title>
+    <title>Profil</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,46 +36,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css"></script>
 	
 	
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 	
-	
-	<script>
-	$(document).ready(function(){
-
-		$("#voirPlus").click(function(){
-			for (var i=1; i<6; i++) {
-				var txt=$("<div></div>");
-				$(".row").append(txt);
-				txt.addClass("card");
-				txt.css("width","13rem");
-				txt.append("<img>");
-				txt.children("img").addClass("card-img-top");
-				txt.children("img").attr("alt","Card image cap");
-				txt.children("img").attr("src","img/noImage.png");
-				txt.append("<div></div>");
-				txt.children("div").addClass("card-body");
-				txt.children("div").append("<h5> #Prenom , #Age </h5>");
-				txt.children("div").children("h5").addClass("card-title");
-				txt.children("div").append("<p> Type de relation : <br/>Ville: <br/>Description: </p>");
-				txt.children("div").children("p").addClass("card-text");
-				txt.children("div").append("<a>voir profil</a>");
-				txt.children("div").children("a").addClass("btn btn-info");
-				txt.children("div").children("a").attr("href","#");
-			}
-					
-		});
-
-	});
-</script>
-  </head>
-  
-  
-  <body class="bodyco">
+	<body class="bodyco">
 
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- Brand -->
@@ -92,111 +71,8 @@
 		</nav>
 		
 		
-		<div class="container" id="containerInCo">
-			<div class="jumbotron" id="jumbInCo">
-					
-						
-					<div class="row">
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-					
-					
-						
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>						
-					</div>
-					
-					<button type="button" id="voirPlus" class="btn btn-primary btn-block"> Voir plus de profils</button>
-			</div>
-		</div>
-		
-	</div>	
-		
-</body>
+				
+	</body>
 	
 		
 
@@ -310,9 +186,4 @@
 	
  
 </html>
-	
-	
-	
-	
-	
 	
