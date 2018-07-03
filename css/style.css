@@ -24,13 +24,19 @@ body{
 
 }
 
+span.status-not-dispo{
+	font-weight: bold;
+	color: red;
+}
 
+span.status-dispo{
+	font-weight: bold;
+	color: #59E96D;
+}
 
 #dateN{
 	width: 300px;
 }
-
-
 
 #pseudo{
 	width: 300px;
@@ -120,6 +126,12 @@ button:hover {
   background-color: #bbbbbb;
 }
 
+input.champ-valide{
+		border: 2px solid green;
+}
+input.champ-invalide{
+		border: 2px solid red;
+}
 /* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
