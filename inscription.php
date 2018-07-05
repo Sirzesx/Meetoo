@@ -28,7 +28,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-      <a class="navbar-brand" href="index.php">Logo</a>
+      <a class="navbar-brand" href="index.php"><h2 class="logo">Meetoo</h2></a>
       
       <!-- Links -->
       <ul class="navbar-nav">
@@ -143,6 +143,15 @@
 		   </div>
         </div>
 		
+        <label>Localisation</label>
+       <div class="form-group row">
+                              
+          <div class="col-lg-5">
+              <input class="form-control" type="number" value="" placeholder="Code Postal">
+          </div>
+          <div class="col-lg-5">
+              <input class="form-control" type="text" value="" placeholder="Ville">
+          </div>
 		</div>
 		
       </div>

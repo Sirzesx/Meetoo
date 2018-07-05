@@ -1,3 +1,14 @@
+.logo{
+
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.box-column{
+
+
+}
+
+
 
 /* NavBar + profil*/
 
@@ -43,3 +54,13 @@ body{
 #recherche{
 	cursor: pointer;
 	}
+
+#description{
+
+	border: solid 1px silver;
+	padding-top: 10px;
+}
+
+.align-mid{
+	text-align: right;
+}

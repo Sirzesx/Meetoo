@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-      <a class="navbar-brand" href="index.php">Logo</a>
+      <a class="navbar-brand" href="index.php"><h2 class="logo">Meetoo</h2></a>
       
       <!-- Links -->
       <ul class="navbar-nav">
@@ -62,19 +62,19 @@
 			  </div>
 
 			  <div class="offset-md-1 col-md-3">
-				<div class="form-group">
-					<label for="sexesearch">Je cherche </label>
-					<select class="form-control" id="sexesearch">
-					  <option>Un Homme </option>
-					  <option>Une Femme</option>
-					</select> 
-				</div>
+  				<div class="form-group">
+  					<label for="sexesearch">Je cherche </label>
+  					<select class="form-control" id="sexesearch">
+  					  <option>Un Homme </option>
+  					  <option>Une Femme</option>
+  					</select> 
+  				</div>
 			  </div>
 			</div>
 
 			 <!-- Partie inscription accueil 2 -->
 			
-			  <div class="form-group">
+			  <div class="form-group col-lg-7">
 				  <label for="age">Age:</label>
 					<input type="number" class="form-control" id="age">
 			  </div>

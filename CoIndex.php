@@ -62,7 +62,7 @@
 
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- Brand -->
-		  <a class="navbar-brand" href="Coindex.php">Logo</a>
+		  <a class="navbar-brand" href="Coindex.php"><h2 class="logo">Meetoo</h2></a>
 		  
 		  <!-- Links -->
 			<ul class="navbar-nav">
@@ -83,7 +83,7 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					  <a class="dropdown-item" href="profil.php">Profil</a>
-					  <a class="dropdown-item" href="#">Parametre</a>
+					  <a class="dropdown-item" href="#">Edition Profil</a>
 					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
@@ -101,7 +101,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age   <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -110,7 +110,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age   <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -119,7 +119,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age   <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -128,7 +128,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age   <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -137,7 +137,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -148,7 +148,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -156,16 +156,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
-								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
-								<a href="#" class="btn btn-info">voir profil</a>
-							</div>
-						</div>
-
-						<div class="card" style="width: 13rem;">
-							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -174,7 +165,16 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
+								<p class="card-text"> Type de relation :XXXXXXX <br/>Ville: <br/>Description: XXXXXX</p>
+								<a href="#" class="btn btn-info">voir profil</a>
+							</div>
+						</div>
+
+						<div class="card" style="width: 13rem;">
+							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
@@ -183,7 +183,7 @@
 						<div class="card" style="width: 13rem;">
 							<img class="card-img-top" src="img/noImage.png" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title"> #Prenom , #Age </h5>
+								<h5 class="card-title"> #Prenom , #Age  <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h5>
 								<p class="card-text"> Type de relation : <br/>Ville: <br/>Description: </p>
 								<a href="#" class="btn btn-info">voir profil</a>
 							</div>
