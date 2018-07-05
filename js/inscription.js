@@ -100,6 +100,7 @@ function validateForm() {
 
 $("#pseudo").keyup(function(e)
 {
+	console.log()
 	if(e.target.value == "")
 		$("#pseudo-dispo").text("");
 	else {
@@ -119,12 +120,10 @@ $("#email").keyup(function(e)
 	if(!(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(e.target.value))){
 		$("#email").removeClass("champ-valide");
 		$("#email").addClass("champ-invalide");
-		console.log("ok1");
 	}
 	else{
 		$("#email").removeClass("champ-invalide");
 		$("#email").addClass("champ-valide");
-		console.log("ok2");
 	}
 });
 
@@ -133,12 +132,10 @@ $("#emailConfirmation").keyup(function(e)
 	if(!(e.target.value == $("#email").val())){
 		$("#emailConfirmation").removeClass("champ-valide");
 		$("#emailConfirmation").addClass("champ-invalide");
-		console.log("ok1");
 	}
 	else{
 		$("#emailConfirmation").removeClass("champ-invalide");
 		$("#emailConfirmation").addClass("champ-valide");
-		console.log("ok2");
 	}
 });
 
@@ -156,12 +153,10 @@ $("#passwordConfirmation").keyup(function(e)
 	if(!(e.target.value == $("#password").val())){
 		$("#passwordConfirmation").removeClass("champ-valide");
 		$("#passwordConfirmation").addClass("champ-invalide");
-		console.log("ok1");
 	}
 	else{
 		$("#passwordConfirmation").removeClass("champ-invalide");
 		$("#passwordConfirmation").addClass("champ-valide");
-		console.log("ok2");
 	}
 });
 
