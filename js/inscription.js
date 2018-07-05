@@ -14,8 +14,13 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
 	document.getElementById("nextBtn").innerHTML = "Confirmer";
+	if(formIsValid())
+		document.getElementById("nextBtn").disabled = false;
+	else
+		document.getElementById("nextBtn").disabled = true;
   } else {
 	document.getElementById("nextBtn").innerHTML = "Suivant";
+	document.getElementById("nextBtn").disabled = false;
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
@@ -33,8 +38,8 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
 	//...the form gets submitted:
-	document.getElementById("regForm").submit();
-	return false;
+		document.getElementById("regForm").submit();
+		return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
@@ -72,7 +77,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-function validateForm() {
+function formIsValid() {
     /*var nom = document.getElementById("nom").value;
 	var prenom = document.getElementById("prenom").value;
 	var pseudo = document.getElementById("pseudo").value;
@@ -91,7 +96,7 @@ function validateForm() {
 	var fieldname;
 	for (i = 0; i < l; i++) {
 		fieldname = fields[i];
-		if (!document.forms["regForm"][fieldname].hasClass("champ-valide")) {
+		if (!($("#"+ fieldname).hasClass("champ-valide"))) {
 			return false;
 		}
 	}
@@ -101,15 +106,18 @@ function validateForm() {
 $("#pseudo").keyup(function(e)
 {
 	console.log()
-	if(e.target.value == "")
+	if(e.target.value == ""){
 		$("#pseudo-dispo").text("");
+		$("#pseudo").removeClass("champ-valide");
+	}
 	else {
 		jQuery.ajax({
 			type: 'POST',
 			url: "http://localhost/Meetoo/function.php",
 			data: {ps: e.target.value, functionName : 'verifPseudo'},
 			success: function(result) {
-					  $("#pseudo-dispo").html(result);
+					$("#pseudo-dispo").html(result);
+					$("#pseudo").addClass("champ-valide");
 			}
 		});
 	}
@@ -177,12 +185,10 @@ $("#prenom").keyup(function(e)
 	if(!(/^[A-Za-z\s]+$/.test(e.target.value))){
 		$("#prenom").removeClass("champ-valide");
 		$("#prenom").addClass("champ-invalide");
-		console.log("ok1");
 	}
 	else{
 		$("#prenom").removeClass("champ-invalide");
 		$("#prenom").addClass("champ-valide");
-		console.log("ok2");
 	}
 });
 
@@ -195,5 +201,15 @@ $("#nom").keyup(function(e)
 	else{
 		$("#nom").removeClass("champ-invalide");
 		$("#nom").addClass("champ-valide");
+	}
+});
+
+$("input").keyup(function(e)
+{
+	if(formIsValid()){
+		document.getElementById("nextBtn").disabled = false;
+	}
+	else{
+		document.getElementById("nextBtn").disabled = true;
 	}
 });

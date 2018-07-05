@@ -60,9 +60,9 @@
           <div class="col-md-3">
             <div class="form-group">
                 <label for="sexe">Je suis </label>
-                <select class="form-control" id="sexe">
-                  <option>Un Homme </option>
-                  <option>Une Femme</option>
+                <select class="form-control" id="sexe" name="sexe">
+                  <option value="homme">Un Homme </option>
+                  <option value="femme">Une Femme</option>
 
                 </select> 
             </div>
@@ -71,9 +71,9 @@
           <div class="offset-md-1 col-md-3">
             <div class="form-group">
                 <label for="sexesearch">Je cherche </label>
-                <select class="form-control" id="sexesearch">
-                  <option>Un Homme </option>
-                  <option>Une Femme</option>
+                <select class="form-control" id="sexesearch" name="sexesearch">
+                  <option value="homme">Un Homme </option>
+                  <option value="femme">Une Femme</option>
                 </select> 
             </div>
           </div>
@@ -99,7 +99,7 @@
 		
 		
 		<div class="form-group">
-              <label for="dateN">date de naissance:</label>
+              <label for="dateN">Date de naissance:</label>
                 <input type="date" class="form-control" id="dateN" name="dateN">
 		</div>
 		
