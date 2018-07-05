@@ -291,7 +291,8 @@
 			
 			<div>
 			  <input type="radio" id="hairother" name="haircolor" value="hairother">
-			  <label for="hairother">A préciser </label> <!-- ??? -->
+			  <label for="hairother">A préciser </label>
+			  <input type="text" id="otherValue" name="other">
 			</div>
 			<div>
 			  <input type="radio" id="hairnone" name="haircolor" value="hairnone">
