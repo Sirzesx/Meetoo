@@ -83,7 +83,7 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					  <a class="dropdown-item" href="profil.php">Profil</a>
-					  <a class="dropdown-item" href="#">Parametre</a>
+					  <a class="dropdown-item" href="#">Edition Profil</a>
 					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
