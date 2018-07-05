@@ -26,6 +26,10 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
     <link href="bootstrap-4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	
     <link rel="stylesheet" href="css/styleCo.css" />
+    <link href="bootstrap-glyphicons-master/css/bootstrap.icon-large.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -41,7 +45,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- Brand -->
-		  <a class="navbar-brand" href="Coindex.php">Logo</a>
+		  <a class="navbar-brand" href="Coindex.php"><h2 class="logo">Meetoo</h2></a>
 		  
 		  <!-- Links -->
 			<ul class="navbar-nav">
@@ -62,7 +66,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					  <a class="dropdown-item" href="profil.php">Profil</a>
-					  <a class="dropdown-item" href="#">Parametre</a>
+					  <a class="dropdown-item" href="edit_profil.php">Parametre</a>
 					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
@@ -73,112 +77,43 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 
 
 		<div class="container">
-		    <div class="row my-2">
-		        <div class="col-lg-8 order-lg-2">
-		            <ul class="nav nav-tabs">
-		                <li class="nav-item">
-		                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profil</a>
-		                </li>
-		                <li class="nav-item">
-		                    <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit </a>
-		                </li>
-		                <li class="nav-item">
-		                    <a href="" data-target="#edit-info-profil" data-toggle="tab" class="nav-link">Edit Information Profil</a>
-		                </li>
-		            </ul>
 
-		            <div class="tab-content py-4">
-		                <div class="tab-pane active" id="profile">
-		                    <h5 class="mb-3">Profil Utilisateur</h5>
-		                    <div class="row">
-		                        <div class="col-md-6">
-		                         	Type de relation recherché : 
-		                         	Nombre d'enfant :
-		                         	Vouloir des enfants ? 
-		                         	Niveau d'étude :
-		                         	Situation Familial :
-		                         	
-		                        </div>
-		                    </div>
-		                    <!--/row-->
-		                </div>
-		                
-		                <div class="tab-pane" id="edit">
-		                    <form role="form">
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Pseudo</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="text" value="Jane">
-		                            </div>
-		                        </div>
-		                        
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="email" value="email@gmail.com">
-		                            </div>
-		                        </div>
-		                        
-		                        <div class="form-group row">
-		                        	
-		                            <label class="col-lg-3 col-form-label form-control-label"></label>
-		                            <div class="col-lg-6">
-		                                <input class="form-control" type="number" value="" placeholder="Code Postal">
-		                            </div>
-		                            <div class="col-lg-3">
-		                                <input class="form-control" type="text" value="" placeholder="Ville">
-		                            </div>
-		                        </div>
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="text" value="janeuser">
-		                            </div>
-		                        </div>
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="password" value="11111122333">
-		                            </div>
-		                        </div>
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="password" value="11111122333">
-		                            </div>
-		                        </div>
-		                        <div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label"></label>
-		                            <div class="col-lg-9">
-		                                <input type="reset" class="btn btn-secondary" value="Cancel">
-		                                <input type="button" class="btn btn-primary" value="Save Changes">
-		                            </div>
-		                        </div>
-		                    </form>
-		                </div>
+		    <div class="row">
 
-		                 <div class="tab-pane" id="edit-info-profil">
-		                    <form role="form">
-		                    	<div class="form-group row">
-		                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
-		                            <div class="col-lg-9">
-		                                <input class="form-control" type="text" value="janeuser">
-		                            </div>
-		                        </div>
-		                    </form>
-		                 </div>
-
-
-		            </div>
+		        <div class="col-lg-4 pull-lg-8 text-lg-center" style="margin-top: 50px;">
+		            <img src="img/coeur.jpg" class="m-x-auto img-fluid img-circle" alt="avatar">
+		            <h6 class="m-t-2" style="margin-top: 10px;">#Nom, <i class="fas fa-mars"></i> <i class="fas fa-venus"></i></h6>
+		            
 		        </div>
-		        <div class="col-lg-4 order-lg-1 text-center">
-		            <img src="//placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-		            <h6 class="mt-2">Photo de profil</h6>
-		            <label class="custom-file">
-		                <input type="file" id="file" class="custom-file-input">
-		                <span class="custom-file-control">Choose file</span>
-		            </label>
+
+		        <div class="col-lg-8 push-lg-4" id="description" style="margin-top: 50px;">
+		        	<p> 
+		        		<div class="row">
+		        			<div class="col">
+			        		Age : <span class="align-mid">XXXX</span><hr size=”10″ />
+			        		Type de relation recherché :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+			        		
+			        		Situation Familial :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+			        		Pays d'origine :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+			        		Niveau de diplôme :<span class="align-mid">XXXX</span><hr size=”10″ />
+			        		Nombre d'enfant :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+			        		Souhait d'avoir des enfants :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+		        			</div>
+		        			<div class="col">
+		        				Localisation : <span class="align-mid">XXXX</span><hr size=”10″ />
+				        		Poids : <span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		Taille :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		Type de Cheveux:<span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		Religion :<span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		Fumeur : <span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		Centre d'intéret : <span class="align-mid">XXXX</span><hr size=”10″ /> 
+				        		
+				        	</div>
+				        </div>
+				        Description : XXXXXX
+		        	</p>
 		        </div>
+
 		    </div>
 		</div>
 				

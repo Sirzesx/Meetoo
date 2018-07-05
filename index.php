@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-      <a class="navbar-brand" href="index.php">Logo</a>
+      <a class="navbar-brand" href="index.php"><h2 class="logo">Meetoo</h2></a>
       
       <!-- Links -->
       <ul class="navbar-nav">
