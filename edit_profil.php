@@ -98,7 +98,7 @@
 				                            </div>
 				                            <div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id0">
-												  <label for="switch-id0">Caché</label>
+												  <label for="switch-id0">cacher</label>
 												</div>
 				                        </div>
 				                        
@@ -113,7 +113,7 @@
 				                            </div>
 				                            <div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id1">
-												  <label for="switch-id1">Caché</label>
+												  <label for="switch-id1">cacher</label>
 												</div>
 				                        </div>
 				                        <div class="form-group row">
@@ -130,7 +130,7 @@
 				                            </div>
 				                            <div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id2">
-												  <label for="switch-id2">Caché</label>
+												  <label for="switch-id2">cacher</label>
 												</div>
 				                        </div>
 
@@ -165,7 +165,7 @@
 											</select>
 											<div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id3">
-												  <label for="switch-id3">Caché</label>
+												  <label for="switch-id3">cacher</label>
 											</div>
 										</div>
 
@@ -182,7 +182,7 @@
 											</select>
 											<div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id4">
-												  <label for="switch-id4">Caché</label>
+												  <label for="switch-id4">cacher</label>
 											</div>
 										</div>
 
@@ -394,7 +394,7 @@
 											</select>
 											<div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id5">
-												  <label for="switch-id5">Caché</label>
+												  <label for="switch-id5">cacher</label>
 											</div>
 										</div>
 
@@ -414,7 +414,7 @@
 											</select>
 											<div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id6">
-												  <label for="switch-id6">Caché</label>
+												  <label for="switch-id6">cacher</label>
 											</div>
 										</div>
 
@@ -426,7 +426,7 @@
 				                            </div>
 				                            <div class=" col-lg-1 switch">
 											  <input type="checkbox" class="switch" id="switch-id7">
-											  <label for="switch-id7">caché</label>
+											  <label for="switch-id7">cacher</label>
 				                            </div>
 				                        </div>
 
@@ -438,31 +438,124 @@
 				                            </div>
 				                             <div class=" col-lg-1 switch">
 											  <input type="checkbox" class="switch" id="switch-id9">
-											  <label for="switch-id9">caché</label>
+											  <label for="switch-id9">cacher</label>
 				                            </div>
 				                        </div>
 
 
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label" for="modf4">Niveau de Diplôme</label>
-											<select class="form-control col-lg-8 " id="modf4">
+											<label class="col-lg-3 col-form-label form-control-label" for="modf5">Religion</label>
+											<select class="form-control col-lg-8 " id="modf5">
 												<option value="0" selected="selected">Default</option>
-												<option value="1" >Pas de diplôme</option>
-												<option value="2" >Brevet</option>
-												<option value="3" >CAP / BEP</option>
-												<option value="4" >BAC</option>
-												<option value="5" >BAC +2</option>
-												<option value="6" >BAC +3</option>
-												<option value="7" > BAC +5 ou plus</option>
+												<option value="1" >Christianisme</option>
+												<option value="2" >Islam</option>
+												<option value="3" >Bouddhisme</option>
+												<option value="4" >Judaïsme</option>
+												<option value="5" >Hindouisme</option>
+												<option value="6" >Athéïsme</option>
 												<option value="8" >Autre</option>
 												
 											</select>
 											<div class=" col-lg-1 switch">
-												  <input type="checkbox" class="switch" id="switch-id6">
-												  <label for="switch-id6">Caché</label>
+												  <input type="checkbox" class="switch" id="switch-id10">
+												  <label for="switch-id10">cacher</label>
 											</div>
 										</div>
+
+										<div class="form-group row">
+				                            <label class="col-lg-3 col-form-label form-control-label">Fumez-vous?</label>
+			                                <div class=" col-lg-1 switch">
+											  <input type="checkbox" class="switch" id="switch-id11">
+											  <label for="switch-id11"></label>
+				                            </div>
+				                             <div class=" col-lg-1 switch">
+											  <input type="checkbox" class="switch" id="switch-id12">
+											  <label for="switch-id12">cacher</label>
+				                            </div>
+				                        </div>
+
+
+				                        <div class="form-group row">
+											<label class="col-lg-3 col-form-label form-control-label" for="modf6">Poids</label>
+											<select class="form-control col-lg-8 " id="modf6">
+												<option value="0" selected="selected">Default</option>
+												<option value="1" > Très mince</option>
+												<option value="2" >mince</option>
+												<option value="3" >Moyen</option>
+												<option value="4" >large</option>
+												<option value="5" >Tres large</option>
+												
+											</select>
+											<div class=" col-lg-1 switch">
+												  <input type="checkbox" class="switch" id="switch-id13">
+												  <label for="switch-id13">cacher</label>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label form-control-label" for="modf7">Taille</label>
+											<select class="form-control col-lg-8 " id="modf7">
+												<option value="0" selected="selected">Default</option>
+												<option value="1" >Nain</option>
+												<option value="2" >Petit</option>
+												<option value="3" >Moyen</option>
+												<option value="4" >grand</option>
+												<option value="5" >très grand</option>
+												
+											</select>
+											<div class=" col-lg-1 switch">
+												  <input type="checkbox" class="switch" id="switch-id14">
+												  <label for="switch-id14">cacher</label>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label form-control-label" for="modf8">Type de cheveux</label>
+											<select class="form-control col-lg-8 " id="modf8">
+												<option value="0" selected="selected">Default</option>
+												<option value="1" > Brun(e)</option>
+												<option value="2" > Blond(e)</option>
+												<option value="3" > Roux/Rousse</option>
+												<option value="4" >Autre</option>
+												
+											</select>
+											<div class=" col-lg-1 switch">
+												  <input type="checkbox" class="switch" id="switch-id15">
+												  <label for="switch-id15">cacher</label>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label form-control-label" for="modf9">Centre d'interets</label>
+											<select class="form-control col-lg-8" id="modf9" multiple="multiple">
+												<option value="0" selected="selected">Default</option>
+												<option value="1" >Informatique</option>
+												<option value="2" >Musique</option>
+												<option value="3" >Arts</option>
+												<option value="4" >Sports</option>
+												<option value="5" >Cuisine</option>
+												<option value="6" >Electronique</option>
+												<option value="7" >Jeux Video</option>
+												<option value="8" >Photographie</option>
+												<option value="9" >Couture</option>
+												<option value="10" >Bricolage</option>
+												<option value="11" >Jardinage</option>
+												<option value="12" >Lecture</option>
+												<option value="13" >Serie/Film</option>
+												<option value="14" >Animation Japonaise</option>
+											</select>
+											<div class=" col-lg-1 switch">
+												  <input type="checkbox" class="switch" id="switch-id16">
+												  <label for="switch-id16">cacher</label>
+											</div>
+										</div>
+
+										<hr size=”10″ />
+				                         <h3>Description :</h3>
+
+				                         <textarea class="form-control" rows="5" id="comment"></textarea>
+
 
 
 
