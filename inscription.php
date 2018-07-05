@@ -143,6 +143,15 @@
 		   </div>
         </div>
 		
+        <label>Localisation</label>
+       <div class="form-group row">
+                              
+          <div class="col-lg-5">
+              <input class="form-control" type="number" value="" placeholder="Code Postal">
+          </div>
+          <div class="col-lg-5">
+              <input class="form-control" type="text" value="" placeholder="Ville">
+          </div>
 		</div>
 		
       </div>

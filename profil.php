@@ -66,7 +66,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					  <a class="dropdown-item" href="profil.php">Profil</a>
-					  <a class="dropdown-item" href="edit_profil.php">Parametre</a>
+					  <a class="dropdown-item" href="edit_profil.php">Edition Profil</a>
 					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>

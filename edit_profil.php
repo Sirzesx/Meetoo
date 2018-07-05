@@ -54,7 +54,7 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					  <a class="dropdown-item" href="profil.php">Profil</a>
-					  <a class="dropdown-item" href="edit_profil.php">Parametre</a>
+					  <a class="dropdown-item" href="edit_profil.php">Edition Profil</a>
 					  <a class="dropdown-item" href="Deconnexion.php">Deconnexion</a>
 					</div>
 				</li>
@@ -126,7 +126,7 @@
 				                        <div class="form-group row">
 				                            <label class="col-lg-3 col-form-label form-control-label">date de Naissance</label>
 				                            <div class="col-lg-8">
-				                                <input class="form-control" type="date" value="NoName">
+				                                <input class="form-control" type="date" >
 				                            </div>
 				                            <div class=" col-lg-1 switch">
 												  <input type="checkbox" class="switch" id="switch-id2">
@@ -554,7 +554,7 @@
 										<hr size=”10″ />
 				                         <h3>Description :</h3>
 
-				                         <textarea class="form-control" rows="5" id="comment"></textarea>
+				                         <textarea class="form-control" rows="5" id="comment"></textarea>s
 
 
 
