@@ -243,6 +243,37 @@
 		</div>
 
 		<div class="tab">
+		<fieldset id="field13">
+			<legend>Quel est votre taille ? </legend>
+			<div>
+			  <input type="radio" id="heightxs" name="height" value="heightxs">
+			  <label for="heightxs"> Nain </label>
+			</div>
+			<div>
+			  <input type="radio" id="heights" name="height" value="heights">
+			  <label for="heights">Petit</label>
+			</div>
+			<div>
+			  <input type="radio" id="heightm" name="height" value="heightm">
+			  <label for="heightm">Moyen</label>
+			</div>
+			<div>
+			  <input type="radio" id="heightl" name="height" value="heightl">
+			  <label for="heightl">grand</label>
+			</div>
+			<div>
+			  <input type="radio" id="heightxl" name="height" value="heightxl">
+			  <label for="heightxl">très grand </label>
+			</div>
+			<div>
+			  <input type="radio" id="heightnon" name="height" value="heightnon">
+			  <label for="heightnon">Ne souhaite pas répondre</label>
+			</div>	
+		
+		</fieldset>
+		</div>
+
+		<div class="tab">
 		<fieldset id="field7">
 			<legend>Quel est votre couleur de cheveux? </legend>
 			<div>
@@ -382,7 +413,7 @@
 			
 			<div>
 			  <input type="checkbox" id="gaming" name="interest" value="gaming">
-			  <label for="gaming">Jeux videos</label>
+			  <label for="gaming">Jeux video</label>
 			</div>
 			
 			<div>

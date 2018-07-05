@@ -41,7 +41,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- Brand -->
-		  <a class="navbar-brand" href="index.php">Logo</a>
+		  <a class="navbar-brand" href="Coindex.php">Logo</a>
 		  
 		  <!-- Links -->
 			<ul class="navbar-nav">
@@ -89,17 +89,15 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 
 		            <div class="tab-content py-4">
 		                <div class="tab-pane active" id="profile">
-		                    <h5 class="mb-3">User Profile</h5>
+		                    <h5 class="mb-3">Profil Utilisateur</h5>
 		                    <div class="row">
 		                        <div class="col-md-6">
-		                            <h6>About</h6>
-		                            <p>
-		                                Web Designer, UI/UX Engineer
-		                            </p>
-		                            <h6>Hobbies</h6>
-		                            <p>
-		                                Indie music, skiing and hiking. I love the great outdoors.
-		                            </p>
+		                         	Type de relation recherché : 
+		                         	Nombre d'enfant :
+		                         	Vouloir des enfants ? 
+		                         	Niveau d'étude :
+		                         	Situation Familial :
+		                         	
 		                        </div>
 		                    </div>
 		                    <!--/row-->
@@ -175,7 +173,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 		        </div>
 		        <div class="col-lg-4 order-lg-1 text-center">
 		            <img src="//placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-		            <h6 class="mt-2">Editer la photos</h6>
+		            <h6 class="mt-2">Photo de profil</h6>
 		            <label class="custom-file">
 		                <input type="file" id="file" class="custom-file-input">
 		                <span class="custom-file-control">Choose file</span>
